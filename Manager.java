@@ -12,6 +12,26 @@ import java.time.Year;
  * @author giorgoskoz
  */
 public class Manager extends Emploee {
+
+    public float getBonuspercent() {
+        return bonuspercent;
+    }
+
+    public double getWage() {
+        return wage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public Year getBirthYear() {
+        return birthYear;
+    }
     
     private float bonuspercent;
     

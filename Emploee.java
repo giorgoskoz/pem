@@ -14,6 +14,22 @@ import java.time.Year;
 public class Emploee extends Person {
     
     private double wage;
+
+    public double getWage() {
+        return wage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public Year getBirthYear() {
+        return birthYear;
+    }
     
     public Emploee(String name, String surname, Year birthyear, double wage) {
         super(name, surname, birthyear);
