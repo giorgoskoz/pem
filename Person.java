@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+//alli library gia tin imerominia
+// import.java.time.Year;
+//int currentYear = Year.now().getValue()
+
 package saidisexercise11_27;
 
 import java.time.Year;
