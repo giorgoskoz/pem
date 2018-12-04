@@ -15,7 +15,7 @@ public class Manager extends Emploee {
 
     private float bonuspercent;
     
-    public Manager (String name, String surname, Year birthyear, double wage, float bonuspercent) {
+    public Manager (String name, String surname, int birthyear, double wage, float bonuspercent) {
         super(name, surname, birthyear, wage);
         this.bonuspercent = bonuspercent;
     }

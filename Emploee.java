@@ -15,7 +15,7 @@ public class Emploee extends Person {
     
     private double wage;
 
-    public Emploee(String name, String surname, Year birthyear, double wage) {
+    public Emploee(String name, String surname, int birthyear, double wage) {
         super(name, surname, birthyear);
         this.wage = wage;
     }
