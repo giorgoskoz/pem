@@ -6,6 +6,7 @@
 package saidisexercise11_27;
 
 import java.time.Year;
+import java.util.Calendar;
 
 /**
  *
@@ -15,8 +16,14 @@ public class Person {
     
     private String name;
     private String surname;
-    private Year birthYear;
+    private int birthYear;
 
+    public Person (String name, String surname, int birthYear) {
+        this.name = name;
+        this.surname = surname;
+        this.birthYear = birthYear;
+    }
+    
     public String getName() {
         return name;
     }
@@ -25,13 +32,14 @@ public class Person {
         return surname;
     }
 
-    public Year getBirthYear() {
+    public int getBirthYear() {
         return birthYear;
     }
     
-    public Person (String name, String surname, Year birthYear) {
-        this.name = name;
-        this.surname = surname;
-        this.birthYear = birthYear;
+    public int getAge() {
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        int age = currentYear - birthYear;
+        return age;
     }
+    
 }
