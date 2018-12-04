@@ -13,25 +13,29 @@ import java.time.Year;
  */
 public class Manager extends Emploee {
 
-    private float bonuspercent;
+    private float bonusPercent;
     
     public Manager (String name, String surname, int birthyear, double wage, float bonuspercent) {
         super(name, surname, birthyear, wage);
-        this.bonuspercent = bonuspercent;
+        this.bonusPercent = bonuspercent;
     }
     
     public Manager (Emploee emploee, float bonuspercent) {
         super(emploee.getName(), emploee.getSurname(), emploee.getBirthYear(), emploee.getWage());
-        this.bonuspercent = bonuspercent;
+        this.bonusPercent = bonuspercent;
     }
     
     public Manager (Person person, double wage, float bonuspercent) {
         super(person.getName(), person.getSurname(), person.getBirthYear(), wage);
-        this.bonuspercent = bonuspercent;
+        this.bonusPercent = bonuspercent;
     }
     
-    public float getBonuspercent() {
-        return bonuspercent;
+    public float getBonusPercent() {
+        return bonusPercent;
+    }
+    
+    public double getBonus() {
+        return super.getWage() * bonusPercent;
     }
     
 }
